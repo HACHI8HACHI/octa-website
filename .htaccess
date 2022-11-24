@@ -1,0 +1,4 @@
+AuthType	Basic
+AuthName	"LisenceCheck"
+AuthUserFile	/../../.htpasswd
+require valid-user
