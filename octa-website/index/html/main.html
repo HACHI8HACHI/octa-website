@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Untitled Document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/sidr/jquery.sidr.min.js" async></script>
+<script src="../js/pagetop_scroll.js" async></script>
+<script src="../js/respond.min.js" async></script>
+	
+<link href="../css/boilerplate.css" rel="stylesheet" >
+<link href="../css/main.css" rel="stylesheet">
+<link href="../js/sidr/jquery.sidr.dark.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<!--▼ページトップエリア-->
+<div id="top_area" class="fluid">
+
+<div class="top_bar">
+  <div class="gridContainer clearfix">
+    <div><h1 class="h1_TXT">h1テキストエリア</h1></div>
+  </div>
+</div>
+
+<div class="logo_area">
+ <div class="gridContainer clearfix">
+ 
+   <!--ロゴ ▶--><div class="logo_sec"><a href="main.html"><img src="../img/Default_logo.png" alt=""/></a></div><!--◀ ロゴ-->
+   
+ <div class="Social_button">
+   <div class="ajuster">
+     <!--フェイスブックボタン ▶--><div class="Social_b"><img src="../img/test/fb.png" alt=""/></div><!--◀ フェイスブックボタン-->
+     <!--ツイッターボタン ▶--><div class="Social_b"><img src="../img/test/tw.png" alt=""/></div><!--◀ ツイッターボタン-->
+    
+     <div style="clear: both"></div>
+   </div>
+ </div>
+     
+ </div>
+</div>
+ 
+</div>
+<div style="clear: both"></div>
+<!--▲ページトップエリア-->
+
+
+<!--▼ナビゲーションバー-->
+<div class="Navigationbar">
+  <div class="gridContainer clearfix">
+  <!--▼ボタン（PC表示時のナビボタン）--> 
+   <div class="navi_button_set">
+    <div class="navi_button"><a href="main.html">HOME</a></div>
+    <div class="navi_button"><a href="#">ナビボタン2</a></div>
+    <div class="navi_button"><a href="#">ナビボタン3</a></div>
+    <div class="navi_button"><a href="#">ナビボタン4</a></div>
+    <div class="navi_button"><a href="#">ナビボタン5</a></div>
+    <div class="navi_button"><a href="#">ナビボタン6</a></div>
+   </div>
+  <!--▲ボタン（PC表示時のナビボタン）-->
+  
+<!--▼スライドメニュー-->
+<div class="S_menu">
+<div class="home_link"><a href="main.html"><i class="fa fa-home"></i></a></div>
+	<div class="sider_menu">
+		<a class="drawer" href="#sidr"><i class="fas fa-bars" style="font-weight: 900;"></i></a>
+	</div>
+<div style="clear:both"></div>   
+  <div id="sidr-right">
+  <ul class="mobi_menu_list" style="margin-top:30px">
+  <!--▼ボタン（タブレット・スマホ表示時のナビボタン）--> 
+    <li><a href="main.html">HOME</a></li>
+    <li><a href="#">ナビボタン2</a></li>
+    <li><a href="#">ナビボタン3</a></li>
+    <li><a href="#">ナビボタン4</a></li>
+    <li><a href="#">ナビボタン5</a></li>
+    <li><a href="#">ナビボタン6</a></li>
+  <!--▲ボタン（タブレット・スマホ表示時のナビボタン）-->
+
+   <li><a class="drawer" href="#sidr" style="font-size:90%;">◀ CLOSE</a></li>
+
+  </ul>
+  </div>
+<script>
+$(document).ready(function() {
+  $('.drawer').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+});
+</script>
+</div>
+<!--▲スライドメニュー--> 
+  
+  </div>
+</div>
+<!--▲ナビゲーションバー-->
+
+
+
+<!--▼ヘッダーエリア-->
+<div class="header_area">
+  <div class="gridContainer clearfix">
+  
+    <div class="header_top_TXT"><i class="fa fa-chevron-circle-right"></i> <!--一行テキスト ▶-->Movist Template<!--◀ 一行テキスト--></div>
+    
+    <!--▼ヘッダー画像（幅950px）-->
+    <div class="header_box"><img src="../img/header.png" alt=""/></div>
+    <!--▲ヘッダー画像（幅950px）-->
+    
+   </div>
+ </div>
+<!--▲ヘッダーエリア-->
+
+
+<!--▼ヘッダー下-->
+<div id="head_under" class="gridContainer clearfix">
+
+  <!--▼メインセクション-->
+  <div class="main_section">
+    
+    <!--▽リード-->
+    <div class="read_L"><div class="read_TXT">動画共有サイトデモ</div></div>
+    <!--△リード-->   
+    
+    
+ <!--▼動画リスト--> 
+ <div class="contents_sec_1 cont_sections">
+    
+    <!--▼動画一覧BOX-----------------------------> 
+      <div class="MOV_thumb_box">
+        <div class="mov_thumb MOV_BOX_res">
+		<!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Sq5QW3YqipM?controls=0&showinfo=0&autoplay=0&rel=0" frameborder="0" allowfullscreen></iframe>
+        <!--△動画コード-->
+        </div>         
+      <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_youtube.html">Youtube</a></div><!--◀ タイトル&リンク-->
+      </div>
+    <!--▲動画一覧BOX-----------------------------> 
+    
+      
+    <!--▼動画一覧BOX-----------------------------> 
+      <div class="MOV_thumb_box">
+        <div class="mov_thumb MOV_BOX_res">
+		<!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+		<iframe src="https://player.vimeo.com/video/51152266?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/51152266">Vimeo Staff Trip [2012]</a> from <a href="https://vimeo.com/derekbeck">Derek Beck</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <!--△動画コード-->
+        </div>         
+      <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_vimeo.html">Vimeo</a></div><!--◀ タイトル&リンク-->
+      </div>
+    <!--▲動画一覧BOX----------------------------->
+    
+      
+    <!--▼動画一覧BOX-----------------------------> 
+      <div class="MOV_thumb_box">
+        <div class="mov_thumb MOV_BOX_res">
+		<!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+		<iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x72d88i" allowfullscreen allow="autoplay"></iframe>
+        <!--△動画コード-->
+        </div>         
+      <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_dailymotion.html">Dailymotion</a></div><!--◀ タイトル&リンク-->
+      </div>
+    <!--▲動画一覧BOX----------------------------->
+    
+    
+          
+    <!--▼動画一覧BOX-----------------------------> 
+      <div class="MOV_thumb_box">
+        <div class="mov_thumb MOV_BOX_res">
+		<!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+		<iframe src="https://player.twitch.tv/?channel=kingrichard" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/kingrichard?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">KingRichardのライブビデオをwww.twitch.tvから視聴する</a>
+        <!--△動画コード-->
+        </div>         
+      <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_twitch.html">Twitch</a></div><!--◀ タイトル&リンク-->
+      </div>
+    <!--▲動画一覧BOX----------------------------->
+    
+    
+    
+    <!--▼動画一覧BOX-----------------------------> 
+      <div class="MOV_thumb_box">
+        <div class="mov_thumb MOV_BOX_res">
+		<!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+		<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"><a href="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"></a><p>年の瀬も迫るこの頃、今年のさまざまな出来事を振り返り、来年に向けた思いを新たにしましょう。</p>Posted by <a href="https://www.facebook.com/FacebookJapan/">フェイスブック</a> on 2015年12月13日</blockquote></div></div>
+        <!--△動画コード-->
+        </div>         
+      <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_facebook.html">Facebook</a></div><!--◀ タイトル&リンク-->
+      </div>
+    <!--▲動画一覧BOX----------------------------->
+    
+
+    
+    <!--▼動画一覧BOX-----------------------------> 
+      <div class="MOV_thumb_box">
+        <div class="mov_thumb MOV_BOX_res">
+		<!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+		<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm23026833/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm23026833">ニコニコ動画（γ）スタートの瞬間</a></noscript>
+        <!--△動画コード-->
+        </div>         
+      <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_niconico.html">ニコニコ動画</a></div><!--◀ タイトル&リンク-->
+      </div>
+    <!--▲動画一覧BOX----------------------------->
+    
+    
+<div class="clear"></div>
+ </div>
+ <!--▲動画リスト--> 
+   
+    
+    <!--▽リード-->
+    <!-- <div class="read_L"><div class="read_TXT">新着コラム</div></div> -->
+    <!--△リード-->  
+
+   <!--▼新着記事リスト--> 
+    <!-- <div class="contents_sec_2 cont_sections"> -->
+    
+    <!--▼記事リスト----------------------------->
+		<!-- <div class="blog_list">
+			<div class="blog_list_thum"><img src="../img/test/sample_01.png" alt=""/></div>
+      <div class="blog_list_TXTarea">
+			<div class="blog_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="sample_subpage.html">新着記事タイトル（News Title）</a></div>
+			<div class="blog_date">2015.6.7 (Tue.）</div>
+      <div class="blog_cont_TXT">ここのテキストはレスポンシブの関係上、スマホ閲覧時には表示されないように設定しています。PC・タブレットでの閲覧時には表示されます。上の記事タイトルと日付などは書き換えてください。</div>
+    </div> -->
+      
+   <!-- <div class="clear"></div>
+   <hr>
+    </div> -->
+    <!--▲記事リスト----------------------------->
+    
+
+    <!--▼記事リスト----------------------------->
+      <!-- <div class="blog_list">
+			<div class="blog_list_thum"><img src="../img/test/sample_02.png" alt=""/></div>
+      <div class="blog_list_TXTarea">
+			<div class="blog_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="sample_subpage.html">新着記事タイトル（News Title）</a></div>
+			<div class="blog_date">2015.6.1  (Mon.）</div>
+      <div class="blog_cont_TXT">ここのテキストはレスポンシブの関係上、スマホ閲覧時には表示されないように設定しています。PC・タブレットでの閲覧時には表示されます。上の記事タイトルと日付などは書き換えてください。</div>
+      </div>
+      
+   <div class="clear"></div>
+   <hr>
+    </div> -->
+    <!--▲記事リスト----------------------------->
+    
+    <!-- </div> -->
+    <!--▲新着記事リスト-->
+    
+    
+    <!--▽リード-->
+    <!-- <div class="read_L"><div class="read_TXT">Pick up動画</div></div> -->
+    <!--△リード-->  
+    
+    <!--▼ピックアップ動画-->
+    <!-- <div class="contents_sec_3 cont_sections">
+      <div class="pickup_MOV MOV_BOX_res">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1gFdQM_Hpos" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="pickup_mov_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="#">ピックアップ動画タイトル（Pick up Title）【↑youtube公式チャンネルより】</a></div>
+      <div class="pickup_mov_cont">
+      ここにピックアップ動画の紹介文や説明などを記述。上の「ピックアップ動画タイトル（Pick up Title）」というタイトルは書き換えてください。タイトルにリンクを貼れるようになっていますが、他ページにリンクを貼りたくないときはリンクタグをはずしてください。
+        <br><br>
+      
+      </div>
+     </div> -->
+  </div>
+  <!--▲メインセクション-->
+  
+  
+  <!--▼サイドメニュー-->
+  <div class="side_menu_section">  
+  
+    <!--▽サイドバーリード-->
+    <div class="read_S"><div class="read_TXT">バナーエリア</div></div>
+    <!--△サイドバーリード-->
+    
+    <!--▽バナー-->
+    <div class="side_menu_box" align="center"><img src="../img/test/img_01.png" alt=""/></div>
+    <!--△バナー-->
+    
+
+    <!--▽サイドバーリード-->
+    <div class="read_S"><div class="read_TXT">サイドバーリード</div></div>
+    <!--△サイドバーリード-->
+    
+    <div class="side_menu_box_border">
+      <li class="side_menu_List"><a href="sample_subpage_2.html">サブページ1</a></li>
+      <li class="side_menu_List"><a href="#">サブページ2</a></li>
+      <li class="side_menu_List"><a href="#">サブページ3</a></li>
+      <li class="side_menu_List"><a href="#">サブページ4</a></li>
+      <li class="side_menu_List"><a href="#">サブページ5</a></li>
+    </div>
+    
+    
+    
+    <!--▽サイドバーリード-->
+    <!-- <div class="read_S"><div class="read_TXT">サイドバーリード</div></div> -->
+    <!--△サイドバーリード-->
+    
+    <!-- <div class="side_menu_box_border">
+      <li class="side_menu_List"><a href="#">サブページ1</a></li>
+      <li class="side_menu_List"><a href="#">サブページ2</a></li>
+      <li class="side_menu_List"><a href="#">サブページ3</a></li>
+      <li class="side_menu_List"><a href="#">サブページ4</a></li>
+    </div> -->
+
+   
+    
+    <!--▽サイドバーリード-->
+    <!-- <div class="read_S"><div class="read_TXT">サイドバーリード</div></div> -->
+    <!--△サイドバーリード-->
+    
+    <!-- <div class="side_menu_box_border">
+      <li class="side_menu_List"><a href="#">サイトマップ</a></li>
+      <li class="side_menu_List"><a href="#">お問い合わせ</a></li>
+      <li class="side_menu_List"><a href="#">運営者情報</a></li>
+    </div> -->
+
+  
+  </div>
+  <!--▲サイドメニュー-->
+
+<div class="clear" style="height:50px;"></div>
+</div>
+
+<!--▲ヘッダー下-->
+
+
+
+<!--▼フッター-->
+<div id="footer">
+  
+  <div class="foot_top">
+    <div class="gridContainer clearfix">
+    当サイトに掲載された記事・写真の無断転載を禁じます。
+    </div>
+  </div>
+  
+  <div class="foot_under">
+    <div class="gridContainer clearfix">
+    Copyright © Movist Template All rights reserved.
+    </div>
+  </div>
+
+</div>
+<!--▲フッター-->
+<p id="pageTopaaa"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+</html>
