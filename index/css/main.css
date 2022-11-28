@@ -607,16 +607,16 @@ margin-top:5px;
 /* メイン
 ------------------------------------------*/
 .main_section {
-width:620px;
+width:102%;
 float:left;
 }
 
 /* 動画リスト
 ------------------------------------------*/
-.contents_sec_1 {width:640px;}
+.contents_sec_1 {width:100%;}
 .MOV_thumb_box {
-width:193px;
-margin-right:20px;
+width: 30.3%;
+margin: auto 1.5%;
 }
 .mov_title {
 margin-top:8px;
@@ -673,7 +673,10 @@ font-size:14px;
 
 /* リード
 ------------------------------------------*/
-.read_L {width:600px;}
+.read_S {
+width: 100%;
+background-color: #585858;
+}
 .read_S {width:280px;}
 
 .read_TXT {
@@ -770,4 +773,22 @@ text-align: center;
 #pageTopaaa a:hover {
 text-decoration: none;
 opacity: 0.7;
+}
+
+.pgTitle {
+display: inline;
+text-decoration: underline;
+border-bottom: #fff;
+cursor: pointer;
+}
+
+.pgTitle:hover {
+	color: #3ea7a2;
+}
+
+.movePg {
+cursor: pointer;
+}
+.movePg:hover {
+	color: #3ea7a2;
 }

@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Untitled Document</title>
+<title>Octa Website</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="http://octa-creation.zombie.jp/sidr/jquery.sidr.min.js" async></script>
-<script src="http://octa-creation.zombie.jp/pagetop_scroll.js" async></script>
-<script src="http://octa-creation.zombie.jp/respond.min.js" async></script>
+<script src="../js/sidr/jquery.sidr.min.js" async></script>
+<script src="../js/pagetop_scroll.js" async></script>
+<script src="../js/respond.min.js" async></script>
 	
-<link href="http://octa-creation.zombie.jp/boilerplate.css" rel="stylesheet" >
-<link href="http://octa-creation.zombie.jp/main.css" rel="stylesheet">
-<link href="http://octa-creation.zombie.jp/sidr/jquery.sidr.dark.css" rel="stylesheet">
+<link href="../css/boilerplate.css" rel="stylesheet" >
+<link href="../css/main.css" rel="stylesheet">
+<link href="../js/sidr/jquery.sidr.dark.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
@@ -25,19 +25,19 @@
 
 <div class="top_bar">
   <div class="gridContainer clearfix">
-    <div><h1 class="h1_TXT">h1テキストエリア</h1></div>
+    <div><h1 class="h1_TXT"></h1></div>
   </div>
 </div>
 
 <div class="logo_area">
  <div class="gridContainer clearfix">
  
-   <!--ロゴ ▶--><div class="logo_sec"><a href="main.html"><img src="http://octa-creation.zombie.jp/Default_logo.png" alt=""/></a></div><!--◀ ロゴ-->
+   <!--ロゴ ▶--><div class="logo_sec"><!--<div class="tomain"><img src="http://octa-creation.zombie.jp/Default_logo.png" alt=""/></div></div>--><!--◀ ロゴ-->
    
  <div class="Social_button">
    <div class="ajuster">
-     <!--フェイスブックボタン ▶--><div class="Social_b"><img src="http://octa-creation.zombie.jp/test/fb.png" alt=""/></div><!--◀ フェイスブックボタン-->
-     <!--ツイッターボタン ▶--><div class="Social_b"><img src="http://octa-creation.zombie.jp/test/tw.png" alt=""/></div><!--◀ ツイッターボタン-->
+     <!--フェイスブックボタン ▶--><!--<div class="Social_b"><img src="http://octa-creation.zombie.jp/test/fb.png" alt=""/></div>--><!--◀ フェイスブックボタン-->
+     <!--ツイッターボタン ▶--><!--<div class="Social_b"><img src="http://octa-creation.zombie.jp/test/tw.png" alt=""/></div>--><!--◀ ツイッターボタン-->
     
      <div style="clear: both"></div>
    </div>
@@ -56,18 +56,18 @@
   <div class="gridContainer clearfix">
   <!--▼ボタン（PC表示時のナビボタン）--> 
    <div class="navi_button_set">
-    <div class="navi_button"><a href="main.html">HOME</a></div>
+    <div class="navi_button"><div class="tomain movePg">HOME</div></div>
     <div class="navi_button"><a href="#yjuku">山崎塾</a></div>
     <div class="navi_button"><a href="#superyjuku">超山崎塾</a></div>
     <div class="navi_button"><a href="#toryumon">登竜門</a></div>
     <div class="navi_button"><a href="#successaid">サクセスエイド</a></div>
-    <div class="navi_button"><a href="#playfully">playfully</a></div>
+    <div class="navi_button"><a href="#playfully">吉川集DIA特別動画</a></div>
    </div>
   <!--▲ボタン（PC表示時のナビボタン）-->
   
 <!--▼スライドメニュー-->
 <div class="S_menu">
-<div class="home_link"><a href="main.html"><i class="fa fa-home"></i></a></div>
+<div class="home_link main"><i class="fa fa-home"></i></div>
 	<div class="sider_menu">
 		<a class="drawer" href="#sidr"><i class="fas fa-bars" style="font-weight: 900;"></i></a>
 	</div>
@@ -75,12 +75,12 @@
   <div id="sidr-right">
   <ul class="mobi_menu_list" style="margin-top:30px">
   <!--▼ボタン（タブレット・スマホ表示時のナビボタン）--> 
-    <li><a href="main.html">HOME</a></li>
+    <li><a class="tomain">HOME</a></li>
     <li><a href="#yjuku">山崎塾</a></li>
     <li><a href="#superyjuku">超山崎塾</a></li>
     <li><a href="#toryumon">登竜門</a></li>
     <li><a href="#successaid">サクセスエイド</a></li>
-    <li><a href="#playfully">playfully</a></li>
+    <li><a href="#playfully">吉川集DIA特別動画</a></li>
   <!--▲ボタン（タブレット・スマホ表示時のナビボタン）-->
 
    <li><a class="drawer" href="#sidr" style="font-size:90%;">◀ CLOSE</a></li>
@@ -103,365 +103,980 @@ $(document).ready(function() {
 <!--▲ナビゲーションバー-->
 
 
-
 <!--▼ヘッダーエリア-->
 <div class="header_area">
   <div class="gridContainer clearfix">
   
-    <div class="header_top_TXT"><i class="fa fa-chevron-circle-right"></i> <!--一行テキスト ▶-->Movist Template<!--◀ 一行テキスト--></div>
-    
+    <div class="header_top_TXT"><!--<i class="fa fa-chevron-circle-right"></i>--></div>
+      <!--一行テキスト ▶--><!--◀ 一行テキスト-->
     <!--▼ヘッダー画像（幅950px）-->
-    <div class="header_box"><img src="http://octa-creation.zombie.jp/header.png" alt=""/></div>
+    <div class="header_box"><img src="../img/header.jpg" alt=""/></div>
     <!--▲ヘッダー画像（幅950px）-->
-    
-   </div>
- </div>
+  </div>
+</div>
 <!--▲ヘッダーエリア-->
 
+<div class="wrapper" id="scmain" style="display: block;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix" style="display: block">
 
-<!--▼ヘッダー下-->
-<div id="head_under" class="gridContainer clearfix" style="display: block">
+    <!--▼メインセクション-->
+    <div class="main_section">
 
-  <!--▼メインセクション-->
-  <div class="main_section">
-    
-    <!--▽リード-->
-    <div id="yjuku" class="read_L"><div class="read_TXT">山崎塾</div></div>
-    <!--△リード-->
-    
-    
-    <!--▼動画リスト--> 
-    <div class="contents_sec_1 cont_sections">
+      <!--▽リード-->
+      <div id="yjuku" class="read_L"><div class="read_TXT">山崎塾</div></div>
 
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-    	    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sq5QW3YqipM?controls=0&showinfo=0&autoplay=0&rel=0" frameborder="0" allowfullscreen></iframe>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_youtube.html">Youtube</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX-----------------------------> 
+      <!--△リード-->
 
 
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-    		  <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-    		  <iframe src="https://player.vimeo.com/video/51152266?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/51152266">Vimeo Staff Trip [2012]</a> from <a href="https://vimeo.com/derekbeck">Derek Beck</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_vimeo.html">Vimeo</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
+      <!--▼動画リスト--> 
+      <div class="contents_sec_1 cont_sections">
 
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-    	    <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-    	    <iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x72d88i" allowfullscreen allow="autoplay"></iframe>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_dailymotion.html">Dailymotion</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-    		  <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-    		  <iframe src="https://player.twitch.tv/?channel=kingrichard" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/kingrichard?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">KingRichardのライブビデオをwww.twitch.tvから視聴する</a>
-          <!--△動画コード-->
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+      	    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sq5QW3YqipM?controls=0&showinfo=0&autoplay=0&rel=0" frameborder="0" allowfullscreen></iframe>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_youtube.html">Youtube</a></div><!--◀ タイトル&リンク-->
         </div>
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_twitch.html">Twitch</a></div><!--◀ タイトル&リンク-->
+        <!--▲動画一覧BOX-----------------------------> 
+
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+      		  <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+      		  <iframe src="https://player.vimeo.com/video/51152266?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/51152266">Vimeo Staff Trip [2012]</a> from <a href="https://vimeo.com/derekbeck">Derek Beck</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_vimeo.html">Vimeo</a></div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+      	    <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+      	    <iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x72d88i" allowfullscreen allow="autoplay"></iframe>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_dailymotion.html">Dailymotion</a></div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+      		  <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+      		  <iframe src="https://player.twitch.tv/?channel=kingrichard" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/kingrichard?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">KingRichardのライブビデオをwww.twitch.tvから視聴する</a>
+            <!--△動画コード-->
+          </div>
+          <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_twitch.html">Twitch</a></div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+      	    <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+      	    <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"><a href="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"></a><p>年の瀬も迫るこの頃、今年のさまざまな出来事を振り返り、来年に向けた思いを新たにしましょう。</p>Posted by <a href="https://www.facebook.com/FacebookJapan/">フェイスブック</a> on 2015年12月13日</blockquote></div></div>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_facebook.html">Facebook</a></div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+      		  <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+      		  <script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm23026833/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm23026833">ニコニコ動画（γ）スタートの瞬間</a></noscript>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_niconico.html">ニコニコ動画</a></div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+        <div class="clear"></div>
       </div>
-      <!--▲動画一覧BOX----------------------------->
-
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-    	    <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-    	    <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"><a href="https://www.facebook.com/FacebookJapan/videos/10153465309929024/"></a><p>年の瀬も迫るこの頃、今年のさまざまな出来事を振り返り、来年に向けた思いを新たにしましょう。</p>Posted by <a href="https://www.facebook.com/FacebookJapan/">フェイスブック</a> on 2015年12月13日</blockquote></div></div>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_facebook.html">Facebook</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-    		  <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-    		  <script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm23026833/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm23026833">ニコニコ動画（γ）スタートの瞬間</a></noscript>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="sample_movie_niconico.html">ニコニコ動画</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-
-      <div class="clear"></div>
-    </div>
-    <!--▲動画リスト--> 
-   
+      <!--▲動画リスト--> 
     
-    <!--▽リード-->
-    <div id="superyjuku" class="read_L"><div class="read_TXT">超山崎塾</div></div>
-    <!--△リード-->
 
-    <!--▼動画リスト--> 
-    <div class="contents_sec_1 cont_sections">
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-            <video src="http://octa-creation.zombie.jp/mov_hts-samp001.mp4" controls controlslist="nodownload"></video>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+      <!--▽リード-->
+      <div id="superyjuku" class="read_L"><div class="read_TXT">超山崎塾</div></div>
+      <!--△リード-->
+
+      <!--▼動画リスト--> 
+      <div class="contents_sec_1 cont_sections">
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+              <video src="../video/mov_hts-samp001.mp4" class="vscmain" controls controlslist="nodownload"></video>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+              <video src="../video/free-video1-sea-cafinet.mp4" class="vscmain" controls controlslist="nodownload"></video>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+              <video src="../video/waterfall-free-video1.mp4" class="vscmain" controls controlslist="nodownload"></video>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+              <video src="../video/test_vol.1.mp4" class="vscmain" controls controlslist="nodownload"></video>
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+        <div class="clear"></div>
       </div>
-      <!--▲動画一覧BOX----------------------------->
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-            <video src="http://octa-creation.zombie.jp/free-video1-sea-cafinet.mp4" controls controlslist="nodownload"></video>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-            <video src="http://octa-creation.zombie.jp/waterfall-free-video1.mp4" controls controlslist="nodownload"></video>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-            <video src="../video/#8_test.mp4" controls controlslist="nodownload"></video>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-      <div class="clear"></div>
-    </div>
-    <!--▲動画リスト-->
+      <!--▲動画リスト-->
 
 
-    <!--▽リード-->
-    <div id="toryumon" class="read_L"><div class="read_TXT">登竜門</div></div>
-    <!--△リード-->
+      <!--▽リード-->
+      <div id="toryumon" class="read_L"><div class="read_TXT">登竜門</div></div>
+      <!--△リード-->
 
-    <!--▼動画リスト--> 
-    <div class="contents_sec_1 cont_sections">
-    
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-          <a href="toryumon_season1.html"><img src="http://octa-creation.zombie.jp/toryumon_season1.png" alt=""></a>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="toryumon_season1.html">Season1</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-          <a href="toryumon_season2.html"><img src="http://octa-creation.zombie.jp/toryumon_season2.png" alt=""></a>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="toryumon_season2.html">Season2</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-          <a href="toryumon_season3.html"><img src="http://octa-creation.zombie.jp/toryumon_season3.png" alt=""></a>
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><div class="mov_title"><a href="toryumon_season3.html">Season3</a></div><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-      <div class="clear"></div>
-    </div>
-    <!--▲動画リスト-->
-
-    <!--▽リード-->
-    <div id="successaid" class="read_L"><div class="read_TXT">サクセスエイド</div></div>
-    <!--△リード-->
-
-    <!--▼動画リスト--> 
-    <div class="contents_sec_1 cont_sections">
-    
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-            
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-      <div class="clear"></div>
-    </div>
-    <!--▲動画リスト-->
-
-    <!--▽リード-->
-    <div id="playfully" class="read_L"><div class="read_TXT">playfully</div></div>
-    <!--△リード-->
-
-    <!--▼動画リスト--> 
-    <div class="contents_sec_1 cont_sections">
-    
-      <!--▼動画一覧BOX-----------------------------> 
-      <div class="MOV_thumb_box">
-        <div class="mov_thumb MOV_BOX_res">
-          <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
-            
-          <!--△動画コード-->
-        </div>         
-        <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
-      </div>
-      <!--▲動画一覧BOX----------------------------->
-      <div class="clear"></div>
-    </div>
-    <!--▲動画リスト-->
-
-   <!--▼新着記事リスト--> 
-    <!-- <div class="contents_sec_2 cont_sections"> -->
-    
-    <!--▼記事リスト----------------------------->
-		<!-- <div class="blog_list">
-			<div class="blog_list_thum"><img src="../img/test/sample_01.png" alt=""/></div>
-      <div class="blog_list_TXTarea">
-			<div class="blog_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="sample_subpage.html">新着記事タイトル（News Title）</a></div>
-			<div class="blog_date">2015.6.7 (Tue.）</div>
-      <div class="blog_cont_TXT">ここのテキストはレスポンシブの関係上、スマホ閲覧時には表示されないように設定しています。PC・タブレットでの閲覧時には表示されます。上の記事タイトルと日付などは書き換えてください。</div>
-    </div> -->
+      <!--▼動画リスト--> 
+      <div class="contents_sec_1 cont_sections">
       
-   <!-- <div class="clear"></div>
-   <hr>
-    </div> -->
-    <!--▲記事リスト----------------------------->
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+            <img src="http://octa-creation.zombie.jp/toryumon_season1.png" class="totrmSea1 movePg" alt="">
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title totrmSea1 movePg">Season1</div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+            <img src="http://octa-creation.zombie.jp/toryumon_season2.png" class="totrmSea2 movePg" alt="">
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title totrmSea2 movePg">Season2</div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+            <img src="http://octa-creation.zombie.jp/toryumon_season3.png" class="totrmSea3 movePg" alt="">
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><div class="mov_title totrmSea3 movePg">Season3</div><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+        <div class="clear"></div>
+      </div>
+      <!--▲動画リスト-->
+
+      <!--▽リード-->
+      <div id="successaid" class="read_L"><div class="read_TXT">サクセスエイド</div></div>
+      <!--△リード-->
+
+      <!--▼動画リスト--> 
+      <div class="contents_sec_1 cont_sections">
+      
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+        <div class="clear"></div>
+      </div>
+      <!--▲動画リスト-->
+
+      <!--▽リード-->
+      <div id="playfully" class="read_L"><div class="read_TXT">吉川集DIA特別動画</div></div>
+      <!--△リード-->
+
+      <!--▼動画リスト--> 
+      <div class="contents_sec_1 cont_sections">
+      
+        <!--▼動画一覧BOX-----------------------------> 
+        <div class="MOV_thumb_box">
+          <div class="mov_thumb MOV_BOX_res">
+            <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+
+            <!--△動画コード-->
+          </div>         
+          <!--タイトル&リンク ▶--><!--◀ タイトル&リンク-->
+        </div>
+        <!--▲動画一覧BOX----------------------------->
+        <div class="clear"></div>
+      </div>
+      <!--▲動画リスト-->
+
+     <!--▼新着記事リスト--> 
+      <!-- <div class="contents_sec_2 cont_sections"> -->
+      
+      <!--▼記事リスト----------------------------->
+  		<!-- <div class="blog_list">
+  			<div class="blog_list_thum"><img src="../img/test/sample_01.png" alt=""/></div>
+        <div class="blog_list_TXTarea">
+  			<div class="blog_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="sample_subpage.html">新着記事タイトル（News Title）</a></div>
+  			<div class="blog_date">2015.6.7 (Tue.）</div>
+        <div class="blog_cont_TXT">ここのテキストはレスポンシブの関係上、スマホ閲覧時には表示されないように設定しています。PC・タブレットでの閲覧時には表示されます。上の記事タイトルと日付などは書き換えてください。</div>
+      </div> -->
+
+     <!-- <div class="clear"></div>
+     <hr>
+      </div> -->
+      <!--▲記事リスト----------------------------->
+
+
+      <!--▼記事リスト----------------------------->
+        <!-- <div class="blog_list">
+  			<div class="blog_list_thum"><img src="../img/test/sample_02.png" alt=""/></div>
+        <div class="blog_list_TXTarea">
+  			<div class="blog_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="sample_subpage.html">新着記事タイトル（News Title）</a></div>
+  			<div class="blog_date">2015.6.1  (Mon.）</div>
+        <div class="blog_cont_TXT">ここのテキストはレスポンシブの関係上、スマホ閲覧時には表示されないように設定しています。PC・タブレットでの閲覧時には表示されます。上の記事タイトルと日付などは書き換えてください。</div>
+        </div>
+
+     <div class="clear"></div>
+     <hr>
+      </div> -->
+      <!--▲記事リスト----------------------------->
+
+      <!-- </div> -->
+      <!--▲新着記事リスト-->
+
+
+      <!--▽リード-->
+      <!-- <div class="read_L"><div class="read_TXT">Pick up動画</div></div> -->
+      <!--△リード-->  
+
+      <!--▼ピックアップ動画-->
+      <!-- <div class="contents_sec_3 cont_sections">
+        <div class="pickup_MOV MOV_BOX_res">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1gFdQM_Hpos" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="pickup_mov_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="#">ピックアップ動画タイトル（Pick up Title）【↑youtube公式チャンネルより】</a></div>
+        <div class="pickup_mov_cont">
+        ここにピックアップ動画の紹介文や説明などを記述。上の「ピックアップ動画タイトル（Pick up Title）」というタイトルは書き換えてください。タイトルにリンクを貼れるようになっていますが、他ページにリンクを貼りたくないときはリンクタグをはずしてください。
+          <br><br>
+        
+        </div>
+       </div> -->
+    </div>
+    <!--▲メインセクション-->
+
+
+    <!--▼サイドメニュー-->
+    <!--<div class="side_menu_section">--> 
+    
+      <!--▽サイドバーリード-->
+      <!--div class="read_S"><div class="read_TXT">バナーエリア</div></div>-->
+      <!--△サイドバーリード-->
+
+      <!--▽バナー-->
+      <!--<div class="side_menu_box" align="center"><img src="http://octa-creation.zombie.jp/test/img_01.png" alt=""/></div>-->
+      <!--△バナー-->
+
+
+      <!--▽サイドバーリード-->
+      <!--<div class="read_S"><div class="read_TXT">サイドバーリード</div></div>-->
+      <!--△サイドバーリード-->
+
+      <!--<div class="side_menu_box_border">
+        <li class="side_menu_List"><a href="sample_subpage.html">サブページ1</a></li>
+        <li class="side_menu_List"><a href="sample_subpage_2.html">サブページ2</a></li>
+        <li class="side_menu_List"><a href="#">サブページ3</a></li>
+        <li class="side_menu_List"><a href="#">サブページ4</a></li>
+        <li class="side_menu_List"><a href="#">サブページ5</a></li>
+      </div>-->
+
+
+
+      <!--▽サイドバーリード-->
+      <!-- <div class="read_S"><div class="read_TXT">サイドバーリード</div></div> -->
+      <!--△サイドバーリード-->
+
+      <!-- <div class="side_menu_box_border">
+        <li class="side_menu_List"><a href="#">サブページ1</a></li>
+        <li class="side_menu_List"><a href="#">サブページ2</a></li>
+        <li class="side_menu_List"><a href="#">サブページ3</a></li>
+        <li class="side_menu_List"><a href="#">サブページ4</a></li>
+      </div> -->
+
     
 
-    <!--▼記事リスト----------------------------->
-      <!-- <div class="blog_list">
-			<div class="blog_list_thum"><img src="../img/test/sample_02.png" alt=""/></div>
-      <div class="blog_list_TXTarea">
-			<div class="blog_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="sample_subpage.html">新着記事タイトル（News Title）</a></div>
-			<div class="blog_date">2015.6.1  (Mon.）</div>
-      <div class="blog_cont_TXT">ここのテキストはレスポンシブの関係上、スマホ閲覧時には表示されないように設定しています。PC・タブレットでの閲覧時には表示されます。上の記事タイトルと日付などは書き換えてください。</div>
-      </div>
-      
-   <div class="clear"></div>
-   <hr>
-    </div> -->
-    <!--▲記事リスト----------------------------->
+      <!--▽サイドバーリード-->
+      <!-- <div class="read_S"><div class="read_TXT">サイドバーリード</div></div> -->
+      <!--△サイドバーリード-->
+
+      <!-- <div class="side_menu_box_border">
+        <li class="side_menu_List"><a href="#">サイトマップ</a></li>
+        <li class="side_menu_List"><a href="#">お問い合わせ</a></li>
+        <li class="side_menu_List"><a href="#">運営者情報</a></li>
+      </div> -->
+
     
-    <!-- </div> -->
-    <!--▲新着記事リスト-->
-    
-    
-    <!--▽リード-->
-    <!-- <div class="read_L"><div class="read_TXT">Pick up動画</div></div> -->
-    <!--△リード-->  
-    
-    <!--▼ピックアップ動画-->
-    <!-- <div class="contents_sec_3 cont_sections">
-      <div class="pickup_MOV MOV_BOX_res">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/1gFdQM_Hpos" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="pickup_mov_title title_link"><i class="fa fa-play-circle fontico_color"></i> <a href="#">ピックアップ動画タイトル（Pick up Title）【↑youtube公式チャンネルより】</a></div>
-      <div class="pickup_mov_cont">
-      ここにピックアップ動画の紹介文や説明などを記述。上の「ピックアップ動画タイトル（Pick up Title）」というタイトルは書き換えてください。タイトルにリンクを貼れるようになっていますが、他ページにリンクを貼りたくないときはリンクタグをはずしてください。
-        <br><br>
-      
-      </div>
-     </div> -->
+    <!--</div>-->
+    <!--▲サイドメニュー-->
+
+    <div class="clear" style="height:50px;"></div>
   </div>
-  <!--▲メインセクション-->
-  
-  
-  <!--▼サイドメニュー-->
-  <div class="side_menu_section">  
-  
-    <!--▽サイドバーリード-->
-    <div class="read_S"><div class="read_TXT">バナーエリア</div></div>
-    <!--△サイドバーリード-->
-    
-    <!--▽バナー-->
-    <div class="side_menu_box" align="center"><img src="http://octa-creation.zombie.jp/test/img_01.png" alt=""/></div>
-    <!--△バナー-->
-    
-
-    <!--▽サイドバーリード-->
-    <div class="read_S"><div class="read_TXT">サイドバーリード</div></div>
-    <!--△サイドバーリード-->
-    
-    <div class="side_menu_box_border">
-      <li class="side_menu_List"><a href="sample_subpage.html">サブページ1</a></li>
-      <li class="side_menu_List"><a href="sample_subpage_2.html">サブページ2</a></li>
-      <li class="side_menu_List"><a href="#">サブページ3</a></li>
-      <li class="side_menu_List"><a href="#">サブページ4</a></li>
-      <li class="side_menu_List"><a href="#">サブページ5</a></li>
-    </div>
-    
-    
-    
-    <!--▽サイドバーリード-->
-    <!-- <div class="read_S"><div class="read_TXT">サイドバーリード</div></div> -->
-    <!--△サイドバーリード-->
-    
-    <!-- <div class="side_menu_box_border">
-      <li class="side_menu_List"><a href="#">サブページ1</a></li>
-      <li class="side_menu_List"><a href="#">サブページ2</a></li>
-      <li class="side_menu_List"><a href="#">サブページ3</a></li>
-      <li class="side_menu_List"><a href="#">サブページ4</a></li>
-    </div> -->
-
-   
-    
-    <!--▽サイドバーリード-->
-    <!-- <div class="read_S"><div class="read_TXT">サイドバーリード</div></div> -->
-    <!--△サイドバーリード-->
-    
-    <!-- <div class="side_menu_box_border">
-      <li class="side_menu_List"><a href="#">サイトマップ</a></li>
-      <li class="side_menu_List"><a href="#">お問い合わせ</a></li>
-      <li class="side_menu_List"><a href="#">運営者情報</a></li>
-    </div> -->
-
-  
-  </div>
-  <!--▲サイドメニュー-->
-
-  <div class="clear" style="height:50px;"></div>
+  <!--▲ヘッダー下-->
 </div>
 
-<!--▲ヘッダー下-->
+<!--▼登竜門Season1-->
+<div class="wrapper" id="sctrmSea1" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
 
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > Season1</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
 
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season1.png" class="totrmSea1Vol1 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea1Vol1 mov_title movePg">Vol.1</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season2.png" class="totrmSea1Vol2 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea1Vol2 mov_title movePg">Vol.2</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season3.png" class="totrmSea1Vol3 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea1Vol3 mov_title movePg">Vol.3</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+        
+        
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season1-->
+
+<!--▼登竜門Season1Vol.1-->
+<div class="wrapper" id="sctrmSea1Vol1" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea1 pgTitle">Season1</div> > Vol.1</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea1Vol1" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season1Vol.1-->
+
+<!--▼登竜門Season1Vol.2-->
+<div class="wrapper" id="sctrmSea1Vol2" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea1 pgTitle">Season1</div> > Vol.2</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea1Vol2" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season1Vol.2-->
+
+<!--▼登竜門Season1Vol.3-->
+<div class="wrapper" id="sctrmSea1Vol3" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea1 pgTitle">Season1</div> > Vol.3</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea1Vol3" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season1Vol.３-->
+
+<!--▼登竜門Season2-->
+<div class="wrapper" id="sctrmSea2" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > Season2</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season1.png" class="totrmSea2Vol1 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea2Vol1 mov_title movePg">Vol.1</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season2.png" class="totrmSea2Vol2 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea2Vol2 mov_title movePg">Vol.2</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season3.png" class="totrmSea2Vol3 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea2Vol3 mov_title movePg">Vol.3</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+        
+        
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season2-->
+
+<!--▼登竜門Season2Vol.1-->
+<div class="wrapper" id="sctrmSea2Vol1" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea2 pgTitle">Season2</div> > Vol.1</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea2Vol1" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season2Vol.1-->
+
+<!--▼登竜門Season2Vol.2-->
+<div class="wrapper" id="sctrmSea2Vol2" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea2 pgTitle">Season2</div> > Vol.2</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea2Vol2" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season2Vol.2-->
+
+<!--▼登竜門Season2Vol.3-->
+<div class="wrapper" id="sctrmSea2Vol3" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea2 pgTitle">Season2</div> > Vol.3</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea2Vol3" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season2Vol.３-->
+
+<!--▼登竜門Season3-->
+<div class="wrapper" id="sctrmSea3" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > Season3</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season1.png" class="totrmSea3Vol1 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea3Vol1 mov_title movePg">Vol.1</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season2.png" class="totrmSea3Vol2 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea3Vol2 mov_title movePg">Vol.2</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <img src="http://octa-creation.zombie.jp/toryumon_season3.png" class="totrmSea3Vol3 movePg" alt="">
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="totrmSea3Vol3 mov_title movePg">Vol.3</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+        
+        
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season3-->
+
+<!--▼登竜門Season3Vol.1-->
+<div class="wrapper" id="sctrmSea3Vol1" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea3 pgTitle">Season3</div> > Vol.1</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea3Vol1" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season3Vol.1-->
+
+<!--▼登竜門Season3Vol.2-->
+<div class="wrapper" id="sctrmSea3Vol2" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea3 pgTitle">Season3</div> > Vol.2</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea3Vol2" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season3Vol.2-->
+
+<!--▼登竜門Season3Vol.3-->
+<div class="wrapper" id="sctrmSea3Vol3" style="display: none;">
+  <!--▼ヘッダー下-->
+  <div id="head_under" class="gridContainer clearfix">
+
+    <!--▼メインセクション-->
+    <div class="main_section">
+      
+      <!--▽リード-->
+      <div class="read_L"><div class="read_TXT"><div class="tomain pgTitle">登竜門</div> > <div class="totrmSea3 pgTitle">Season3</div> > Vol.3</div></div>
+      <!--△リード-->   
+      
+      <div id="page_cont" style=" margin-top:3%">
+      
+        <div class="page_comment">
+        <!--▽コンテンツ--> 
+          <!--▼動画リスト--> 
+          <div class="contents_sec_1 cont_sections">
+
+            <!--▼動画一覧BOX-----------------------------> 
+            <div class="MOV_thumb_box">
+              <div class="mov_thumb MOV_BOX_res">
+                <!--▽動画コードここに記述（※コードのwidth（幅）やheight（縦）のサイズを書き換えず、そのままコードを貼り付ければOK）--> 
+                <video src="../video/test_vol.1.mp4" class="vsctrmSea3Vol3" controls controlslist="nodownload"></video>
+                <!--△動画コード-->
+              </div>         
+              <!--タイトル&リンク ▶--><div class="mov_title">特別動画</div><!--◀ タイトル&リンク-->
+            </div>
+            <!--▲動画一覧BOX----------------------------->
+
+          </div>
+          <!--▲動画リスト-->
+        <!--△コンテンツ--> 
+        </div>
+
+      </div>  
+    </div>
+    <!--▲メインセクション-->
+
+  <div class="clear" style="height:50px;"></div>
+  </div>
+
+  <!--▲ヘッダー下-->
+</div>
+<!--▲登竜門Season3Vol.３-->
 
 <!--▼フッター-->
 <div id="footer">
@@ -482,4 +1097,5 @@ $(document).ready(function() {
 <!--▲フッター-->
 <p id="pageTopaaa"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
 </body>
+<script src="../js/uiaction.js"></script>
 </html>
