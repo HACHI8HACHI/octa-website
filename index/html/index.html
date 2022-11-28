@@ -5,18 +5,46 @@
     <title>ログイン画面</title>
     <link href="http://octa-creation.zombie.jp/style.css" rel="stylesheet" type="text/css">
     </head>
-      <form name="login_form" action="main.html">
-        <div class="login_form_top">
-          <h1>LOGIN</h1>
-          <p>UserID、Passwordをご入力の上、「LOGIN」ボタンをクリックしてください。</p>
-        </div>
+      <form name="login_form">
+        <center>
+          <h1 class="contact-title">ログイン</h1>
+          <p>ID, Passwordご入力の上, 「認証」ボタンをクリックしてください.</p>
+      </center>
+      <center>
+    <div>
+      <div>
+        <input type="id" name="id" placeholder="ID">
+      </div>
+      <div>
+        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
+    </div>
+      
+    </center>
+  </div>
+  <input type="submit" name="botton" value="LOGIN">
+</form>
+<!--ログイン処理-->
+<script language="JavaScript" type="text/javascript">
+  function nextPage() {
+    if(document.login_form.id.value=="admin"){
+      id = "ma"//document.login_form.id.value
+    }
+      if (document.login_form.pass.value=="octacreation"){
+        pwd = "in"//document.login_form.pass.value
+      }
+     
+      location.href = id + pwd + ".html";
+  }
+</script>
+
+   <!--
         <div class="login_form_btm">
           <input type="id" name="user_id" placeholder="UserID">
           <input type="password" name="password" placeholder="Password">
           <input type="submit" name="botton" value="LOGIN">
-          <input type="submit" name="botton" value="CreateUser">
+        <input type="submit" name="botton" value="CreateUser">
         </div>
-      </form>
+        -->
     </body>
     </html>
     
